@@ -1,0 +1,77 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url('https://user-images.githubusercontent.com/134029633/256108607-c20ba04e-2acf-418c-a8bb-6b93f5f10534.png'); /* 배경 이미지 설정 */
+    background-size: 30%; /* 배경 이미지 크기 조절 */
+    background-position: center; /* 배경 이미지 위치 조절 */
+}
+
+
+.title {
+    text-align: left;
+    font-size: 1.5rem;
+    color: rgb(0, 128, 79);
+    margin: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.main-button {
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-button button {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1rem;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.main-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* 마우스를 올렸을 때의 배경색 */
+}
+
+.my-image2 {
+    width: 900px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
